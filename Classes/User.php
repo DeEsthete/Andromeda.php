@@ -26,6 +26,6 @@ class User
 
     static function get(){
         $db = new Database("AndromedaDb");
-        return $db->query("SELECT * FROM users WHERE users.id = " . $_SESSION['user']);
+        return $db->query("SELECT * FROM users WHERE users.id = " . $_SESSION['user'])[0];
     }
 }
