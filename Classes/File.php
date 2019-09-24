@@ -36,4 +36,13 @@ class File
     {
         file_put_contents($this->filename, $str, FILE_APPEND);
     }
+
+//    public function search($line, $symbol){
+//        $handle = fopen($this->filename, "r");
+//        for ($i = 0; $i < $line; $i++){
+//            $line = fgets($handle, 4096);
+//        }
+//        $line = (array)$line;
+//        return array_search($symbol, $line);
+//    }
 }
